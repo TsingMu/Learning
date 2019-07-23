@@ -23,9 +23,7 @@ public class PersonWithEnc {
 		if(n>=0 && n<=150){
 			age = n; 
 		}
-		else{
-			age=1111;
-		}
+		
 	}
 
 	public static void main(String[] args) {

@@ -23,13 +23,16 @@ public class PersonWithEnc {
 		if(n>=0 && n<=150){
 			age = n; 
 		}
+		else{
+			age=1111;
+		}
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		PersonWithEnc per = new PersonWithEnc();
 		
-		per.setAge(127);
+		per.setAge(180);
 		per.setName("Tsing");
 		per.tell();
 		

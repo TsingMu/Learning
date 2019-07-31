@@ -5,7 +5,7 @@ public class SyncDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		NonSync sync = new NonSync();
+		SyncCodeBlock sync = new SyncCodeBlock();
 		Thread t1 = new Thread(sync); 
 		Thread t2 = new Thread(sync); 
 		Thread t3 = new Thread(sync); 

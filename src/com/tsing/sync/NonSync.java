@@ -14,7 +14,7 @@ public class NonSync implements Runnable{
 					// TODO: handle exception
 					e.printStackTrace();
 				}
-				System.out.println("sold ticket: count= " + count--);
+				System.out.println(Thread.currentThread().getName() +" sold ticket: count= " + count--);
 			}
 		}
 		

@@ -5,7 +5,7 @@ import java.io.*;
 
 public class Create {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
 		String path = "c:" + File.separator + "test.txt";
 		File f = new File(path);
@@ -17,7 +17,12 @@ public class Create {
 			e.printStackTrace();
 		}
 		
-		Thread.sleep(5000);
+		try{
+			Thread.sleep(5000);
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 		
 		if(f.exists()){
 			f.delete();

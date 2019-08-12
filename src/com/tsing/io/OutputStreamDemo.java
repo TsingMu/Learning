@@ -10,7 +10,7 @@ public class OutputStreamDemo {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		File f = new File("c:" + File.separator + "mouqing" + File.separator +"test.txt");
+		File f = new File("e:" + File.separator  +"test.txt");
 		
 		OutputStream out = new FileOutputStream(f,true);
 		
@@ -20,6 +20,8 @@ public class OutputStreamDemo {
 		
 		out.write(b);
 		out.close();
+		System.err.println("Fuck you");
+		System.out.println("Yeah!");
 
 	}
 

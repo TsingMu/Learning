@@ -47,6 +47,6 @@ class Person implements China{
 	@Override
 	public String sayHello(String name, int age) {
 		// TODO Auto-generated method stub
-		return name + ",hello ,I fucked you " + age  +"times";
+		return  "hello ,"+name+" fucked you " + age  +" times";
 	}
 }

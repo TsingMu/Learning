@@ -19,6 +19,7 @@ public class Test11_1 {
 
 		sb.delete(0, 5);
 		System.out.println("after delete:" + sb);
+		
 	}
 
 }

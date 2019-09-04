@@ -18,6 +18,7 @@ public class Test11_1 {
 		System.out.println("after reverse:" + sb);
 
 		sb.delete(0, 5);
+		System.out.println("fuck ");
 		
 		
 		System.out.println("after delete:" + sb);

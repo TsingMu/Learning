@@ -34,13 +34,24 @@ public class DemoPreparedStatement {
 		pstmt = conn.prepareStatement(sql);
 		
 		pstmt.setString(1, name);
-		pstmt.setString(2, passwd);
+		pstmt.setString(2, passwd); 
 		pstmt.setInt(3, age);
 		pstmt.setString(4, sex);
 		pstmt.setDate(5, bir);
 		
 		pstmt.executeUpdate();
 		System.out.println("insert finished!");
+		
+		sql = "update user set password=? , sex='F' where id = ?";
+		pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, "test");
+		pstmt.setInt(2, 2);
+		pstmt.executeUpdate();
+		
+		sql = "delete from user where id > ?";
+		pstmt = conn.prepareStatement(sql);
+		pstmt.setInt(1, 4);
+		pstmt.executeUpdate();
 		
 		pstmt.close();
 		conn.close();
